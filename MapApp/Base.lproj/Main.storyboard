@@ -19,6 +19,12 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="F2y-Dj-XZw">
                                 <rect key="frame" x="0.0" y="78" width="414" height="784"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1uT-OC-FsI">
+                                <rect key="frame" x="378" y="834" width="20" height="20"/>
+                                <connections>
+                                    <action selector="changeMapTypeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VtI-zK-3YR"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="STE-d5-19c">
                                 <rect key="frame" x="0.0" y="44" width="414" height="34"/>
                                 <constraints>
@@ -33,10 +39,12 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F2y-Dj-XZw" secondAttribute="trailing" id="87B-Hz-XhH"/>
                             <constraint firstItem="F2y-Dj-XZw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MfB-gu-8pR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1uT-OC-FsI" secondAttribute="bottom" constant="8" id="V4K-ot-igl"/>
                             <constraint firstItem="STE-d5-19c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YyE-as-ryp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="STE-d5-19c" secondAttribute="trailing" id="Z4K-h1-nh2"/>
                             <constraint firstItem="F2y-Dj-XZw" firstAttribute="top" secondItem="STE-d5-19c" secondAttribute="bottom" id="jWE-HD-Vmc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="F2y-Dj-XZw" secondAttribute="bottom" id="pxZ-VF-JBT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1uT-OC-FsI" secondAttribute="trailing" constant="16" id="sgJ-c3-Ibm"/>
                             <constraint firstItem="STE-d5-19c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uXe-wE-SJa"/>
                         </constraints>
                     </view>

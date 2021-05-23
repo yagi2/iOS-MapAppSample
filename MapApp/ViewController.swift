@@ -57,5 +57,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         return true
     }
+    
+    @IBAction func changeMapTypeButton(_ sender: Any) {
+        // MapTypeをトグル 標準 -> 航空写真 -> 航空写真+標準
+        // 3D Flyover -> 3D Flyover+標準 -> 交通機関
+        if displayMap.mapType == .standard {
+            displayMap.mapType = .satellite
+        } else if displayMap.mapType == .satellite {
+            displayMap.mapType = .hybrid
+        } else if displayMap.mapType == .hybrid {
+            displayMap.mapType = .satelliteFlyover
+        } else if displayMap.mapType == .satelliteFlyover {
+            displayMap.mapType = .hybridFlyover
+        } else if displayMap.mapType == .hybridFlyover {
+            displayMap.mapType = .mutedStandard
+        } else {
+            displayMap.mapType = .standard
+        }
+    }
 }
 
