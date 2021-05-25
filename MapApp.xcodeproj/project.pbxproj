@@ -26,6 +26,7 @@
 		C512EF04265A98A300AB2691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C512EF0A265AA18200AB2691 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		C512EF0B265AA18200AB2691 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		C512EF0C265D10B200AB2691 /* MapApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MapApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 		C512EEF5265A98A200AB2691 /* MapApp */ = {
 			isa = PBXGroup;
 			children = (
+				C512EF0C265D10B200AB2691 /* MapApp.entitlements */,
 				C512EEF6265A98A200AB2691 /* AppDelegate.swift */,
 				C512EEF8265A98A200AB2691 /* SceneDelegate.swift */,
 				C512EEFA265A98A200AB2691 /* ViewController.swift */,
@@ -293,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MapApp/MapApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 95QEB5MACQ;
 				INFOPLIST_FILE = MapApp/Info.plist;
@@ -312,6 +315,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MapApp/MapApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 95QEB5MACQ;
 				INFOPLIST_FILE = MapApp/Info.plist;
